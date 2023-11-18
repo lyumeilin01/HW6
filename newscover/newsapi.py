@@ -2,7 +2,7 @@ import requests
 import datetime
 import re
 
-def fetch_latest_news(api_key, news_keywords, lookback_days=10):
+def fetch_latest_news(api_key, news_keywords, lookback_days=31):
     #if re.search(r'[^a-zA-Z]', news_keywords) is not None:
         #raise ValueError()
     

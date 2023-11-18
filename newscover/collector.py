@@ -6,7 +6,7 @@ from newsapi import fetch_latest_news
 def main():
     parser = argparse.ArgumentParser(description="News Collector CLI")
     parser.add_argument("-k", "--api-key", required=True, help="NewsAPI API Key")
-    parser.add_argument("-b", "--lookback-days", type=int, default=30, help="Number of days to look back")
+    parser.add_argument("-b", "--lookback-days", type=int, default=31, help="Number of days to look back")
     parser.add_argument("-i", "--input-file", required=True, help="Input JSON file")
     parser.add_argument("-o", "--output-dir", required=True, help="Output directory")
 
