@@ -7,3 +7,9 @@ run processor.py
 
 collector.py
 - the page parameter decides which page of result you want out of the pages returned
+
+The sources[country].json file
+- contains news sources in us and ca
+- which are the two countries representing North America
+- these sources are passed as inputs to get articles
+
