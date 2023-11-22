@@ -9,12 +9,20 @@ params = {
     "apiKey": api_key,
     #"page": 1, #altered from 1 to 5 to collect result from 5 pages
     #"sources":
-    "country": "us, ca"
+    "country": "ca"
 }
 
 response = requests.get(base_url, params=params)
 
-print(response.json().get("sources"))
+if response.status_code == 200:
+  # Parse the JSON data in the response
+  data = response.json()
 
-#with open("sources.json", "w") as output_file:
-      #json.dump(response.json(), output_file, indent = 4)
+  # Access the 'sources' key in the JSON response
+  sources = data["sources"]
+
+  # Print the list of sources
+
+
+  with open("sources_ca.json", "w") as output_file:
+        json.dump(sources, output_file, indent = 4)
