@@ -34,7 +34,7 @@ def main():
     for name, keywords in keyword_data.items():
         keyword_query = " ".join(keywords)
 
-        end = datetime(2023, 11, 16)
+        end = datetime(2023, 11, 20)
         # Format the date as 'YYYY-MM-DD'
         end_date = end.strftime('%Y-%m-%d')
 

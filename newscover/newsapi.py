@@ -51,8 +51,7 @@ def fetch_latest_news(api_key, news_keywords, start_date, end_date):
         "to": end_date,
         "apiKey": api_key,
         #"page": 1, #altered from 1 to 5 to collect result from 5 pages
-        "sources": sources,
-        "searchIn": "content"
+        "sources": sources
 
     }
 
